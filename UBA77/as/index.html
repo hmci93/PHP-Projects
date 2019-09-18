@@ -1,0 +1,1017 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>উন্নত ভাৰত অভিযান | জেইচি</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="all" />
+		<!-- Slick nav CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css" media="all" />
+		<!-- Iconfont CSS -->
+		<link rel="stylesheet" type="text/css" href="icofont.css" media="all" />
+		<!-- Slick CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<!-- Owl carousel CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+		<!-- Popup CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+		<!-- Switcher CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/switcher-style.css">
+		<!-- Animate CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+		<!-- Main style CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="all" />
+		<!-- Favicon Icon -->
+		<link rel="icon" type="image/png" href="assets/img/favcion.png" />
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+			
+	<style>
+			@media (min-width: 768px) {
+			
+			/* show 3 items */
+			.carousel-inner .active,
+			.carousel-inner .active + .carousel-item,
+			.carousel-inner .active + .carousel-item + .carousel-item,
+			.carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+				display: block;
+			}
+			
+			.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+			.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+			.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+			.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+				transition: none;
+			}
+			
+			.carousel-inner .carousel-item-next,
+			.carousel-inner .carousel-item-prev {
+			  position: relative;
+			  transform: translate3d(0, 0, 0);
+			}
+			
+			.carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+				position: absolute;
+				top: 0;
+				right: -25%;
+				z-index: -1;
+				display: block;
+				visibility: visible;
+			}
+			
+			/* left or forward direction */
+			.active.carousel-item-left + .carousel-item-next.carousel-item-left,
+			.carousel-item-next.carousel-item-left + .carousel-item,
+			.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+			.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+			.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+				position: relative;
+				transform: translate3d(-100%, 0, 0);
+				visibility: visible;
+			}
+			
+			/* farthest right hidden item must be abso position for animations */
+			.carousel-inner .carousel-item-prev.carousel-item-right {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+				display: block;
+				visibility: visible;
+			}
+			
+			/* right or prev direction */
+			.active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+			.carousel-item-prev.carousel-item-right + .carousel-item,
+			.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+			.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+			.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+				position: relative;
+				transform: translate3d(100%, 0, 0);
+				visibility: visible;
+				display: block;
+				visibility: visible;
+			}
+			
+			}
+			
+			/* Bootstrap Lightbox using Modal */
+			
+			#profile-grid { overflow: auto; white-space: normal; } 
+			#profile-grid .profile { padding-bottom: 40px; }
+			#profile-grid .panel { padding: 0 }
+			#profile-grid .panel-body { padding: 15px }
+			#profile-grid .profile-name { font-weight: bold; }
+			#profile-grid .thumbnail {margin-bottom:6px;}
+			#profile-grid .panel-thumbnail { overflow: hidden; }
+			#profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
+			
+			.carousel-control-prev {
+			  margin-left: -10px;
+			  width: 20px;
+			
+			}
+			
+			.carousel-control-next {
+				width: 20px;
+			  margin-right: -10px;
+			
+			}
+			
+			.carousel-control-next-icon:after
+			{
+			  content: '>';
+			  font-size: 55px;
+			  color: red;
+			}
+			
+			.carousel-control-prev-icon:after {
+			  content: '<';
+			  font-size: 55px;
+			  color: red;
+			}
+		.team-color{
+			color:#006FD0;
+			font-weight:700;
+			font-family: "Raleway", sans-serif;
+			font-size: 36px;
+			line-height: 45px;
+		}
+				</style>
+
+		<script>
+				new WOW().init();
+		</script>
+		   <script>
+				jQuery(document).ready(function($) {
+					$('.counter').counterUp({
+						delay: 20,
+						time: 2000
+					});
+				});
+			</script>
+						<!-- jquery main JS -->
+		<script src="assets/js/jquery.min.js"></script>
+		<!-- Counter JS -->
+<script src="assets/js/jquery.counterup.min.js"></script>
+	</head>
+	<body data-spy="scroll" data-target=".header" data-offset="50">
+		<!-- Page loader -->
+	    <div id="preloader"></div>
+		<!-- header section start -->
+		<header class="header">
+			<div class="container">
+				<div class="row flexbox-center">
+					<div class="col-lg-2 col-md-3 col-6">
+						<div class="logo">
+							<a href="#home"><img src="assets/img/logo-as.png" alt="logo" /></a>
+							<a class="as-version" href="../index.html">English Version</a>
+						</div>
+					</div>
+					<div class="col-lg-10 col-md-9 col-6">
+						<div class="responsive-menu"></div>
+					    <div class="mainmenu">
+                            <ul id="primary-menu">
+															
+                                <li><a class="nav-link active" href="#home">মুখ্যপৃষ্ঠা</a></li>
+                                <li><a class="nav-link" href="#about">আমাৰ বিষয়ে</a></li>
+                                <li><a class="nav-link" href="#feature">ইউ বি এ পৰিসৰ</a></li>
+                                <li><a class="nav-link" href="#analysis">বিশ্লেষণ আৰু প্ৰতিবেদন</a></li>
+																<li><a class="nav-link" href="#team">ফিল্ডৰ কাম</a></li>
+																<li><a class="nav-link" href="#team1">ইউ বি এ দল</a></li>
+																<li><a class="nav-link" href="#cus">যোগাযোগ কৰক</a></li>
+                            </ul>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</header><!-- header section end -->
+		<section class="hero-area" id="home">
+			<div class="player" data-property="{videoURL:'https://youtu.be/VQK2yyp9hVM',containment:'#home',autoPlay:true, mute:true, startAt:0, showControls:false, loop:true, opacity:1}"></div>
+			<div class="hero-area-slider">
+					<div class="hero-area-single-slide">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-5">
+										<div class="hero-area-content">
+											<h1>জেইচি দলৰ দ্বাৰা ইউ বি এ পৰিদৰ্শন</h1>
+											<p>জেইচি দলৰ দ্বাৰা জেইচি ইউ বি এৰ অন্তর্গত সকলোবোৰ গাঁও পৰিদৰ্শন কৰা হৈছে।<b><br>যোৰহাট অভিযান্ত্ৰিক মহাবিদ্যালয়</b></p>
+											<a href="#about" class="appao-btn">আমাৰ বিষয়ে</a>
+											<a href="#cus" class="appao-btn">যোগাযোগ</a>
+										</div>
+									</div>
+									<div class="col-lg-7">
+										<div class="hand-mockup text-lg-left text-center">
+											<img src="assets/img/sir2.jpg" alt="Hand Mockup" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<div class="hero-area-single-slide">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-5">
+										<div class="hero-area-content">
+											<h1>উন্নত চৌকাৰ প্ৰদৰ্শন।</h1>
+											<p>কুৰুকানী বস্তিত জেইচি দলৰ দ্বাৰা উন্নত চৌকাৰ ব্যৱহাৰ আৰু চৌকাটোৰ সুবিধা সমূহ দেখুৱা হৈছে।<b><br>যোৰহাট অভিযান্ত্ৰিক মহাবিদ্যালয়</b></p>
+											<a href="#about" class="appao-btn">আমাৰ বিষয়ে</a>
+											<a href="#cus" class="appao-btn">যোগাযোগ</a>
+										</div>
+									</div>
+									<div class="col-lg-7">
+										<div class="hand-mockup text-lg-left text-center">
+											<img src="assets/img/5.jpg" alt="Hand Mockup" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				<div class="hero-area-single-slide">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-5">
+									<div class="hero-area-content">
+										<h1>শক্তি সংৰক্ষণৰ বিষয়ে প্ৰশিক্ষণ।</h1>
+										<p>ই সমৰ্থন, শক্তি সংৰক্ষণ আৰু উন্নত ‌‍চৌকাৰ বিষয়ে প্ৰশিক্ষণ, কুৰুকানী বস্তিত।<b><br>যোৰহাট অভিযান্ত্ৰিক মহাবিদ্যালয়</b></p>
+										<a href="#about" class="appao-btn">আমাৰ বিষয়ে</a>
+										<a href="#cus" class="appao-btn">যোগাযোগ</a>
+									</div>
+								</div>
+								<div class="col-lg-7">
+									<div class="hand-mockup text-lg-left text-center">
+										<img src="assets/img/1.jpg" alt="Hand Mockup" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hero-area-single-slide">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-5">
+										<div class="hero-area-content">
+											<h1>ইউ বি এৰ ফিল্ডৰ কাম।</h1>
+											<p>জেইচি ইউ বি এ দলৰ দ্বাৰা কুৰুকানী গাঁওত ৰাজহুৱা দমকল এটা মেৰামতি কৰাৰ দৃশ্য।<br><b>যোৰহাট অভিযান্ত্ৰিক মহাবিদ্যালয়</b></p>
+											<a href="#about" class="appao-btn">আমাৰ বিষয়ে</a>
+											<a href="#cus" class="appao-btn">যোগাযোগ</a>
+										</div>
+									</div>
+									<div class="col-lg-7">
+										<div class="hand-mockup text-lg-left text-center">
+											<img src="assets/img/2.jpg" alt="Hand Mockup" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				<div class="hero-area-single-slide">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-5">
+								<div class="hero-area-content">
+									<h1>চৌকাটো কেনেকৈ ব্যৱহাৰ হয় দেখুওৱা হৈছে।</h1>
+									<p>কুৰুকানী বস্তিত যেইচি টীমৰ দ্বাৰা মানুহৰ বাবে চৌকাটো ব্যৱহাৰ কৰি চাহ বনোৱা হৈছে।<br><b>যোৰহাট অভিযান্ত্ৰিক মহাবিদ্যালয়</b></p>
+									<a href="#about" class="appao-btn">আমাৰ বিষয়ে</a>
+									<a href="#cus" class="appao-btn">যোগাযোগ</a>
+								</div>
+							</div>
+							<div class="col-lg-7">
+								<div class="hand-mockup text-lg-left text-center">
+									<img src="assets/img/qwe.jpg" alt="Hand Mockup" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hero-area-single-slide">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="hero-area-content">
+									<h1>ইউ বি এ কামৰ মাজৰ এটা মুহূৰ্ত।</h1>
+									<p>কুৰুকানী বস্তিত উন্নত ভাৰত অভিযানৰ কামৰ মাজৰ এটা মুহূৰ্ত। কুৰুকানী বস্তিত উন্নত চৌকাৰ কেনেকৈ ব্যৱহাৰ কৰা হয় দেখুৱা হৈছে। <br><b>যোৰহাট অভিযান্ত্ৰিক মহাবিদ্যালয়</b></p>
+									<a href="#about" class="appao-btn">আমাৰ বিষয়ে</a>
+									<a href="#cus" class="appao-btn">যোগাযোগ</a>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<div class="hand-mockup-custom text-lg-left text-center">
+									<img src="assets/img/hand-mockup3.png" alt="Hand Mockup" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- hero area end -->
+
+			<section class="pro-section section-padding" id="about">
+				<br>
+					<div class="container">
+							<div class="row">
+									<div class="col-lg-6">
+											<div class="wrapper-content">
+													<h3>যোৰহাট অভিযান্ত্ৰিক মহাবিদ্যালয়ৰ<span class="color"> উন্নত ভাৰত অভিযানৰ</span> বিষয়ে</h3>
+
+													<ul class="text-content">
+															<li>
+																	<span class="digit float-left">1</span>
+																	<p class="text-justify"> <b>দৰ্শন :</b> গাঁৱৰ বিকাশৰ প্ৰক্ৰিয়াত শৈক্ষিক তথা জ্ঞান প্ৰতিষ্ঠান সমূহৰ সহযোগৰ লক্ষ্যৰে 'উন্নত ভাৰত অভিযান' অনুপ্ৰাণিত।</p>
+															</li>
+
+															<li>
+																	<span class="digit float-left">2</span>
+																	<p class="text-justify"><b>অভিযান :</b> উন্নত ভাৰত অভিযানৰ উদ্দেশ্য হৈছে উচ্চ শিক্ষা প্ৰতিষ্ঠানৰ সমূহক গ্ৰামীণ অঞ্চলৰ মানুহৰ সৈতে জড়িত কৰি তেওঁলোকৰ বিকাশত উদ্ভৱ হোৱা প্ৰত্যাহ্বানবোৰ চিনাক্ত কৰা আৰু তাৰ এটা উচিত সমাধান নিৰ্ধাৰণ কৰা। ইয়াৰ আৰু এটা উদ্দেশ্য হৈছে সমাজ আৰু শৈক্ষিক প্ৰতিষ্ঠানৰ মাজত জ্ঞানৰ বিতৰণৰ জৰিয়তে সু সম্পৰ্ক সৃষ্টি কৰা। ইয়াৰোপৰি গাঁৱৰ উন্নয়নৰ কাৰণে ৰাজহুৱা আৰু ব্যক্তিগত খণ্ডৰ সক্ষমতা বৃদ্ধি কৰাটোৱে এই অভিযানৰ লক্ষ্য। </p>
+															</li>
+													</ul> <!-- text-content -->
+											</div> <!-- wrapper-content -->
+									</div>
+
+									<div class="col-lg-5 offset-1">
+											<div class="caption wow fadeInRight">
+													<img src="assets/img/princi.jpg" alt="">
+											</div> <!-- caption -->
+									</div>
+							</div>
+					</div>
+					<br><br>
+			</section> 
+
+		<!-- feature section start -->
+		<section class="feature-area ptb-90" id="feature">
+			<div class="container">
+				<div class="row flexbox-center">
+					<div class="col-lg-12 offset-lg-4">
+						<div class="section-header wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s" data-wow-duration="1s">
+						  <h3 class="section-title">আমাৰ ইউ বি এ পৰিসৰ</h3>
+						  <span class="section-divider"></span>
+						</div>
+					  </div>
+			
+					  <div class="col-lg-7 network-img">
+						  <div id="container1" class="wow fadeIn float-left" data-wow-duration="2s" data-wow-delay=".2s"  style="height: 500px; width: 100%"></div>
+					  </div>
+			
+					  <div class="col-lg-5">
+			
+						<div class="row  box wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">
+			
+						  <!-- <div class="col-lg-12 col-md-12"> -->
+							<div class="col-sm-12">
+							<div class="icon"><i class="fas fa-home"></i></div>
+							<h4 class="title"><a href="">গাঁও (মোট জনসংখ্যা)</a></h4>
+							</div>
+							<div class="col-sm-4 desc-1"  onclick="location.href='villageData.php?v_id= 1 '">
+							<p class="description">ভাস্কৰ নগৰ <br><b>( <span class="counter counter-size"> 458</span> )</b></p>
+							</div>
+							<div class="col-sm-4 desc-2" onclick="location.href='villageData.php?v_id= 2 '">
+							<p class="description">জানখনা গাঁও<br><b>( <span class="counter counter-size">  686 </span> )</b></p>
+							</div>
+							<div class="col-sm-4 desc-3" onclick="location.href='villageData.php?v_id= 3 '">
+							<p class="description">কুৰুকানী বস্তি<br><b>( <span class="counter counter-size">  632 </span> )</b></p>
+							</div>
+							<div class="col-sm-4 desc-4" onclick="location.href='villageData.php?v_id= 4 '">
+							<p class="description">ককিলামুখ মিছিং গাঁও<br><b>( <span class="counter counter-size"> 259</span> )</b></p>
+							</div>
+							<div class="col-sm-4 desc-5" onclick="location.href='villageData.php?v_id= 5 '">
+							<p class="description">পহুকটীয়া শ্যাম গাঁও<br><b>( <span class="counter counter-size"> 299</span> )</b></p>
+						  </div>
+	
+						</div>
+		
+					  </div>
+				</div>
+			</div>
+		</section><!-- feature section end -->
+		<!-- analysis section -->
+		<section id="analysis" class="section-bg">
+			<div class="container">
+	  
+			  <div class="section-header">
+				<h3 class="section-title-1">বিশ্লেষণ আৰু প্ৰতিবেদন</h3>
+				<span class="section-divider-1"></span>
+				<p class="section-description-1">তলত উল্লেখ কৰা সকলোবোৰ বিশ্লেষণ আৰু প্ৰতিবেদনৰ তথ্য বাস্তৱ গাঁওৰ ওপৰত ভিত্তি কৰা হৈছে।</p>
+			  </div>
+	  
+			  <div class="row">
+	  
+				<div class="col-lg-6" onclick="location.href='demo_comp.php'">
+				  <div class="box wow fadeInLeft">
+					<div class="icon"><i class="fas fa-chart-pie"></i></div>
+					<h4 class="title"><a href="">গাঁওৰ তুলনা</a></h4>
+					<p class="description">বিভিন্ন বিভাগৰ গাঁওৰ মাজত তুলনা, উদাহৰণস্বৰূপে জনসংখ্যা, সংযোগ ইত্যাদি।</p>
+				  </div>
+				</div>
+	  
+				<div class="col-lg-6" onclick="location.href='assets/img/coming.jpg'">
+				  <div class="box wow fadeInRight">
+					<div class="icon"><i class="fas fa-chart-bar"></i></div>
+					<h4 class="title"><a href="">বিশ্লেষণ আৰু প্ৰতিবেদন</a></h4>
+					<p class="description">পাঁচখন গাঁওৰ বিশ্লেষণ আৰু প্ৰতিবেদন (গাঁওৰ তথ্য আৰু তাৰ বিভিন্ন পৰিকল্পনাৰ গ্ৰাফিকেল বিশ্লেষণ)।</p>
+				  </div>
+				</div>
+	  
+				<div class="col-lg-6" onclick="location.href='assets/img/coming.jpg'">
+				  <div class="box wow fadeInLeft">
+					<div class="icon"><i class="fas fa-chart-line"></i></div>
+					<h4 class="title"><a href="">কার্যকলাপ</a></h4>
+					<p class="description">যেইচি ইউ বি এ টীম হিচাপে আমি বৰ্তমান পাঁচখন গাঁও আৰু তাৰ মানুহৰ বাবে কৰি থকা কাৰ্যকলাপৰ স্থিতি।</p>
+				  </div>
+				</div>
+	  
+				<div class="col-lg-6"  onclick="location.href='assets/img/coming.jpg'">
+				  <div class="box wow fadeInRight">
+					<div class="icon"><i class="far fa-lightbulb"></i></div>
+					<h4 class="title"><a href="">উন্নয়ন পৰিকল্পনা</a></h4>
+					<p class="description">ইউ বি এ উন্নয়ন পৰিকল্পনা আৰু ইয়াৰ গাঁওৰ বোৰৰ বিভিন্ন উন্নয়ন প্ৰকল্প। </p>
+				  </div>
+				</div>
+	  
+			  </div>
+			</div>
+		  </section><!-- #analysis -->
+
+
+
+
+
+		<!-- video section start -->
+		<section class="video-area ptb-90">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+					    <div class="video-popup">
+							<a href="https://www.youtube.com/watch?v=SBzTgbysWnc" class="popup-youtube"><i class="icofont icofont-ui-play"></i></a>
+							<h1>কুৰুকানী বস্তিৰ ভিডিও উপস্থাপনা</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- video section end -->
+		<section class="team-area ptb-90" id="team">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+					    <div class="sec-title">
+							<h2><span class="team-color">ফিল্ডৰ কাম</span><span class="sec-title-border"><span></span><span></span><span></span></span></h2>
+							<p>উন্নত ভাৰত অভিযানৰ বাবে কৰা কিছুমান ফিল্ডৰ কাম</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row no-gutters">
+			  
+						<div class="col-lg-4 col-md-6">
+						  <div class="team-item wow fadeInUp">
+							<a href="assets/img/gallery/gallery-1.jpg" class="team-popup">
+							  <img src="assets/img/gallery/gallery-1.jpg" alt="">
+							</a>
+						  </div>
+						</div>
+			  
+						<div class="col-lg-4 col-md-6">
+						  <div class="team-item wow fadeInUp">
+							<a href="assets/img/gallery/gallery-2.jpg" class="team-popup">
+							  <img src="assets/img/gallery/gallery-2.jpg" alt="">
+							</a>
+						  </div>
+						</div>
+			  
+						<div class="col-lg-4 col-md-6">
+						  <div class="team-item wow fadeInUp">
+							<a href="assets/img/gallery/gallery-3.jpg" class="team-popup">
+							  <img src="assets/img/gallery/gallery-3.jpg" alt="">
+							</a>
+						  </div>
+						</div>
+			  
+						<div class="col-lg-4 col-md-6">
+						  <div class="team-item wow fadeInUp">
+							<a href="assets/img/gallery/gallery-4.jpg" class="team-popup">
+							  <img src="assets/img/gallery/gallery-4.jpg" alt="">
+							</a>
+						  </div>
+						</div>
+			  
+						<div class="col-lg-4 col-md-6">
+						  <div class="team-item wow fadeInUp">
+							<a href="assets/img/gallery/gallery-5.jpg" class="team-popup">
+							  <img src="assets/img/gallery/gallery-5.jpg" alt="">
+							</a>
+						  </div>
+						</div>
+			  
+						<div class="col-lg-4 col-md-6">
+						  <div class="team-item wow fadeInUp">
+							<a href="assets/img/gallery/gallery-6.jpg" class="team-popup">
+							  <img src="assets/img/gallery/gallery-6.jpg" alt="">
+							</a>
+						  </div>
+						</div>
+
+
+
+						<div class="col-lg-4 col-md-6">
+								<div class="team-item wow fadeInUp">
+								<a href="assets/img/gallery/sir1.jpg" class="team-popup">
+									<img src="assets/img/gallery/sir1.jpg" alt="">
+								</a>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+									<div class="team-item wow fadeInUp">
+									<a href="assets/img/gallery/sir2.jpg" class="team-popup">
+										<img src="assets/img/gallery/sir2.jpg" alt="">
+									</a>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6">
+										<div class="team-item wow fadeInUp">
+										<a href="assets/img/gallery/sir3.jpg" class="team-popup">
+											<img src="assets/img/gallery/sir3.jpg" alt="">
+										</a>
+										</div>
+									</div>
+			  
+					  </div>
+
+				</div>
+				</section>
+	
+
+		<!-- team section start -->
+		<section class="team-area ptb-90" id="team1">
+				<div class="container">
+						<div class="row">
+								<div class="col-lg-12">
+									<div class="sec-title">
+										<h2><span class="team-color">আমাৰ দল</span><span class="sec-title-border"><span></span><span></span><span></span></span></h2>
+										<p>যোৰহাট অভিযান্ত্ৰিক মহাবিদ্যালয়ৰ বাবে আমাৰ ইউ বি এ দল</p>
+									</div>
+								</div>
+							</div>
+						<div id="carouselExample" class="carousel slide wow fadeInUp" data-ride="carousel" data-interval="9000">
+							<div class="carousel-inner row w-100 mx-auto" role="listbox">
+								<div class="carousel-item col-md-3  active">
+								   <div class="panel panel-default">
+									  <div class="panel-thumbnail">
+											<div class="single-team-member">
+													<div class="team-member-img">
+														<img src="assets/img/team/1.jpg" alt="team">
+														<div class="team-member-icon">
+															<div class="display-table">
+																<div class="display-tablecell">
+																	<a href="#"><i class="icofont-facebook"></i></a>
+																	<a href="#"><i class="icofont-twitter"></i></a>
+																	<a href="#"><i class="icofont-linkedin"></i></a>
+																	<a href="#"><i class="icofont-pinterest"></i></a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="team-member-info">
+														<a href="#"><h4>ড° ৰীতা শৰ্মা</h4></a>
+														<p>অধ্যক্ষ, যেইচি</p>
+													</div>
+												</div>
+									  </div>
+									</div>
+								</div>
+								<div class="carousel-item col-md-3 ">
+								   <div class="panel panel-default">
+									  <div class="panel-thumbnail">
+											<div class="single-team-member">
+													<div class="team-member-img">
+														<img src="assets/img/team/2.jpg" alt="team">
+														<div class="team-member-icon">
+															<div class="display-table">
+																<div class="display-tablecell">
+																	<a href="#"><i class="icofont-facebook"></i></a>
+																	<a href="#"><i class="icofont-twitter"></i></a>
+																	<a href="#"><i class="icofont-linkedin"></i></a>
+																	<a href="#"><i class="icofont-pinterest"></i></a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="team-member-info">
+														<a href="#"><h4>ড° দেৱ কান্ত ৰাভা</h4></a>
+														<p>সমন্বয়কাৰী</p>
+													</div>
+												</div>
+									  </div>
+									</div>
+								</div>
+								<div class="carousel-item col-md-3 ">
+								   <div class="panel panel-default">
+									  <div class="panel-thumbnail">
+											<div class="single-team-member">
+													<div class="team-member-img">
+														<img src="assets/img/team/3.jpg" alt="team">
+														<div class="team-member-icon">
+															<div class="display-table">
+																<div class="display-tablecell">
+																	<a href="#"><i class="icofont-facebook"></i></a>
+																	<a href="#"><i class="icofont-twitter"></i></a>
+																	<a href="#"><i class="icofont-linkedin"></i></a>
+																	<a href="#"><i class="icofont-pinterest"></i></a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="team-member-info">
+														<a href="#"><h4>ড° থুলেশ্বৰ নাথ</h4></a>
+														<p>সদস্য</p>
+													</div>
+												</div>
+									  </div>
+									</div>
+								</div>
+								<div class="carousel-item col-md-3 ">
+									<div class="panel panel-default">
+									  <div class="panel-thumbnail">
+											<div class="single-team-member">
+													<div class="team-member-img">
+														<img src="assets/img/team/4.jpg" alt="team">
+														<div class="team-member-icon">
+															<div class="display-table">
+																<div class="display-tablecell">
+																	<a href="#"><i class="icofont-facebook"></i></a>
+																	<a href="#"><i class="icofont-twitter"></i></a>
+																	<a href="#"><i class="icofont-linkedin"></i></a>
+																	<a href="#"><i class="icofont-pinterest"></i></a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="team-member-info">
+														<a href="#"><h4>শ্রী ধ‍্ৰুৱজ্যোতি বৰুৱা</h4></a>
+														<p>সদস্য</p>
+													</div>
+												</div>
+									  </div>
+									</div>
+								</div>
+								<div class="carousel-item col-md-3 ">
+								  <div class="panel panel-default">
+									  <div class="panel-thumbnail">
+											<div class="single-team-member">
+													<div class="team-member-img">
+														<img src="assets/img/team/5.png" alt="team">
+														<div class="team-member-icon">
+															<div class="display-table">
+																<div class="display-tablecell">
+																	<a href="#"><i class="icofont-facebook"></i></a>
+																	<a href="#"><i class="icofont-twitter"></i></a>
+																	<a href="#"><i class="icofont-linkedin"></i></a>
+																	<a href="#"><i class="icofont-pinterest"></i></a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="team-member-info">
+														<a href="#"><h4>শ্রী পাপুমণি শইকীয়া</h4></a>
+														<p>সদস্য</p>
+													</div>
+												</div>
+									  </div>
+									</div>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+		</section><!-- team section end -->
+
+
+		<!-- download section start -->
+		<section class="download-area ptb-90" id="cus">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+					    <div class="sec-title">
+							<h2>উন্নত ভাৰত অভিযান<span class="sec-title-border"><span></span><span></span><span></span></span></h2>
+							<p>কিছুমান গুৰুত্বপূৰ্ণ লিঙ্ক</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<ul>
+							<li>
+								<a href="http://unnat.iitd.ac.in/index.php/Pages/display/index" class="download-btn flexbox-center">
+									<div class="download-btn-icon">
+											<i class="icofont-link"></i>
+									</div>
+									<div class="download-btn-text">
+										<p>উন্নত ভাৰত অভিযান</p>
+										<h4>www.unnat.iitd.ac.in</h4>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://jecassam.ac.in/" class="download-btn flexbox-center">
+									<div class="download-btn-icon">
+											<i class="icofont-link"></i>
+									</div>
+									<div class="download-btn-text">
+										<p>যোৰহাট অভিযান্ত্ৰিক মহাবিদ্যালয়</p>
+										<h4>www.jecassam.ac.in</h4>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="download-btn flexbox-center">
+									<div class="download-btn-icon">
+											<i class="icofont-link"></i>
+									</div>
+									<div class="download-btn-text">
+										<p>উন্নত ভাৰত অভিযান, যেইচি</p>
+										<h4>www.jecuba.in</h4>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section><!-- download section end -->
+
+		<!-- footer section start -->
+		<footer class="footer" id="contact">
+			<div class="container">
+				<div class="row">
+                    <div class="col-lg-6">
+						<div class="contact-form">
+							<h4>যোগাযোগ</h4>
+							<p class="form-message"></p>
+							<form id="contact-form" action="email.php" method="post">
+				                <input type="text" name="name" placeholder="আপোনাৰ নাম প্ৰৱেশ কৰক" required>
+				                <input type="email" name="email" placeholder="আপোনাৰ ই মেইল প্ৰৱেশ কৰক" required>
+				                <input type="text" name="subject" placeholder="বিষয়"required>
+				                <textarea placeholder="বাৰ্তা" name="message" required></textarea>
+				                <button type="submit" name="submit" onclick="myFunction()">চেন্দ মেচেজ</button>
+										</form>
+										
+									</div>
+						
+                    </div>
+                    <div class="col-lg-6">
+						<div class="contact-address">
+							<h4><u>ঠিকানা</u></h4>
+							<p>উন্নত ভাৰত অভিযান<br>যোৰহাট অভিযান্ত্ৰিক মহাবিদ্যালয়,<br>গড়মূৰ, যোৰহাট, পিন-785007, জিলা-যোৰহাট, ৰাজ্য-অসম</p>
+							<ul>
+								<li>
+									<div class="contact-address-icon">
+										<i class="icofont icofont-headphone-alt"></i>
+									</div>
+									<div class="contact-address-info">
+										<a href="callto:#">+919864321999</a>
+									</div>
+								</li>
+								<li>
+									<div class="contact-address-icon">
+										<i class="icofont icofont-envelope"></i>
+									</div>
+									<div class="contact-address-info">
+										<a href="#">contact@jecuba.in</a>
+									</div>
+								</li>
+								<li>
+									<div class="contact-address-icon">
+										<i class="icofont icofont-web"></i>
+									</div>
+									<div class="contact-address-info">
+										<a href="www.website.com">www.jecuba.in</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+                    </div>
+				</div>
+				<!-- <div class="row">
+                    <div class="col-lg-12">
+						<div class="subscribe-form">
+							<form action="#">
+								<input type="text" placeholder="Your email address here">
+								<button type="submit">Subcribe</button>
+							</form>
+						</div>
+                    </div>
+				</div> -->
+				<div class="row">
+                    <div class="col-lg-12">
+						<div class="copyright-area">
+							<ul>
+								<li><a href="#"><i class="icofont icofont-facebook"></i></a></li>
+								<li><a href="#"><i class="icofont icofont-twitter"></i></a></li>
+								<li><a href="#"><i class="icofont icofont-linkedin"></i></a></li>
+								<li><a href="#"><i class="icofont icofont-pinterest"></i></a></li>
+								<li><a href="#"><i class="icofont icofont-google-plus"></i></a></li>
+							</ul>
+							<p>কপিৰাইট &copy; সর্বস্বত্ব সংৰক্ষিত | যোৰহাট অভিযান্ত্ৰিক মহাবিদ্যালয় <i class="fa fa-heart-o" aria-hidden="true"></i>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+						</div>
+                    </div>
+				</div>
+			</div>
+		</footer><!-- footer section end -->
+		<a href="#" class="scrollToTop">
+			<i class="icofont icofont-arrow-up"></i>
+		</a>
+
+	
+		<!-- Bootstrap JS -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!-- Slick nav JS -->
+		<script src="assets/js/jquery.slicknav.min.js"></script>
+		<!-- Slick JS -->
+		<script src="assets/js/slick.min.js"></script>
+		<!-- owl carousel JS -->
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<!-- Popup JS -->
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		
+		<!-- Counterup waypoints JS -->
+		<script src="assets/js/waypoints.min.js"></script>
+	    <!-- YTPlayer JS -->
+	    <script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+		<!-- jQuery Easing JS -->
+		<script src="assets/js/jquery.easing.1.3.js"></script>
+		<!-- Gmap JS -->
+		<script src="assets/js/gmap3.min.js"></script>
+		<!-- Custom map JS -->
+		<script src="assets/js/custom-map.js"></script>
+		<!-- WOW JS -->
+		<script src="assets/js/wow-1.3.0.min.js"></script>
+		<!-- Switcher JS -->
+		<script src="assets/js/switcher.js"></script>
+		<!-- charts -->
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+		<script src="https://code.highcharts.com/modules/export-data.js"></script>
+		<script src="http://code.highcharts.com/highcharts-more.js"></script>
+		<!-- magnific-popup -->
+		<script src="assets/js/magnific-popup.min.js"></script>
+		<!-- main JS -->
+		<script src="assets/js/main.js"></script>
+
+ <script>
+	//       (function (H) {
+	//     function deferRender (proceed) {
+	//         var series = this, 
+	//             $renderTo = $(this.chart.container1.parentNode);
+	
+	//         // It is appeared, render it
+	//         if ($renderTo.is(':appeared') || !series.options.animation) {
+	//             proceed.call(series);
+				
+	//         // It is not appeared, halt renering until appear
+	//         } else  {
+	//             $renderTo.appear(); // Initialize appear plugin
+	//             $renderTo.on('appear', function () {
+	//                 proceed.call(series);
+	//             });
+	//         }
+	//     };
+		
+	//     H.wrap(H.Series.prototype, 'render', deferRender);
+		
+	// }(Highcharts));
+	$('#container1').highcharts({
+			chart: {
+				type: 'column',
+				options3d: {
+					enabled: true,
+					alpha: 10,
+					beta: 25,
+					depth: 70
+				}
+			},
+			title: {
+				text: 'জনসংখ্যা'
+			},
+			subtitle: {
+				text: 'গাঁওবোৰৰ মাজৰ জনসংখ্যাৰ পার্থক্য'
+			},
+			plotOptions: {
+				column: {
+					depth: 25,
+					colorByPoint: true
+				}
+			},
+			colors: [
+					'#FE901F',
+					'#47A3DA',
+					'#2F5C85',
+					'#2DD6C9',
+					'#434348'
+				],
+				// exporting: { enabled: false },
+				credits: {
+		  enabled: false
+	  },
+			xAxis: {
+			  categories: ['BN', 'JG', 'KB', 'KMG', 'PSG'],
+				labels: {
+					skew3d: true,
+					style: {
+						fontSize: '16px'
+					}
+				}
+			},
+			yAxis: {
+				title: {
+					text: null
+				}
+			},
+			series: [{
+				name: 'মোট জনসংখ্যা',
+				data: [458, 686, 632, 259, 299]
+			}]
+		});
+		  
+		  </script>
+		  <script>
+		    $('.team-popup').magnificPopup({
+				type: 'image',
+				removalDelay: 300,
+				mainClass: 'mfp-fade',
+				gallery: {
+				  enabled: true
+				},
+				zoom: {
+				  enabled: true,
+				  duration: 300,
+				  easing: 'ease-in-out',
+				  opener: function(openerElement) {
+					return openerElement.is('img') ? openerElement : openerElement.find('img');
+				  }
+				}
+			  });
+	</script>
+<script>
+
+$('#carouselExample').on('slide.bs.carousel', function (e) {
+
+  
+var $e = $(e.relatedTarget);
+var idx = $e.index();
+var itemsPerSlide = 4;
+var totalItems = $('.carousel-item').length;
+
+if (idx >= totalItems-(itemsPerSlide-1)) {
+	var it = itemsPerSlide - (totalItems - idx);
+	for (var i=0; i<it; i++) {
+		// append slides to end
+		if (e.direction=="left") {
+			$('.carousel-item').eq(i).appendTo('.carousel-inner');
+		}
+		else {
+			$('.carousel-item').eq(0).appendTo('.carousel-inner');
+		}
+	}
+}
+});
+
+
+$('#carouselExample').carousel({ 
+			interval: 2000
+	});
+
+
+$(document).ready(function() {
+/* show lightbox when clicking a thumbnail */
+$('a.thumb').click(function(event){
+  event.preventDefault();
+  var content = $('.modal-body');
+  content.empty();
+	var title = $(this).attr("title");
+	$('.modal-title').html(title);        
+	content.html($(this).html());
+	$(".modal-profile").modal({show:true});
+});
+
+});
+</script>
+	</body>
+</html>

@@ -1,0 +1,6 @@
+<option value="cow">Cow</option>
+<option value="buffalo">Buffalo</option>
+<option value="goat_or_sheep">Goat/Sheep</option>
+<option value="bullocks">Bullocks</option>
+<option value="calves">Calves</option>
+<option value="poultry_or_duck">Poultry/Duck</option>

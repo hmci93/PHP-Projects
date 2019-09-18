@@ -1,0 +1,1 @@
+ $imgUrl="http://www.digitalkkhsou.in/admit/learner_img/ckp.php?q=".$_SESSION['photo']."_p.jpg";

@@ -1,0 +1,2 @@
+<option value="traditional_chullah">Traditional Chullah</option>
+<option value="smokeless_chullah">Smokeless Chullah</option>

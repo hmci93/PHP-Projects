@@ -1,0 +1,2 @@
+<option value="with_toilet">With Toilet</option>
+<option value="without_toilet">Without Toilet</option>

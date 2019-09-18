@@ -1,0 +1,1 @@
+<option value="average_annual_income">Average Annual Income</option>

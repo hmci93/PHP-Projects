@@ -1,0 +1,5 @@
+<option value="">Select Sub Section</option>
+<option value="land_use_pattern">Land Use Pattern</option>
+<option value="source_wise_irrig">Source Wise Irrigation Among Households</option>
+<option value="irrig_methods">Irrigation Methods Among Households</option>
+<option value="chemicals">Use of Chemicals And Fertilizers</option>

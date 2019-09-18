@@ -1,0 +1,4 @@
+<option value="kutcha">Kutcha</option>
+<option value="semi_pucca">Semi-Pucca</option>
+<option value="pucca">Pucca</option>
+<option value="homeless">Homeless</option>

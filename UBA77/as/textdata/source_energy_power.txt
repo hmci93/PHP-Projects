@@ -1,0 +1,5 @@
+<option value="">Select Sub Section</option>
+<option value="reg_elec_conn">General Information</option>
+<option value="light_source_usuage">Lighting Source and usage in Village</option>
+<option value="cooking_fuel">Cooking Fuels Usage In Village Among Households</option>
+<option value="cooking_chullah">Cooking Chullah Usage In Village Among Households</option>

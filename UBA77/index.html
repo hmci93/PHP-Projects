@@ -1,0 +1,1008 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Unnat Bharat Abhiyan | JEC</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="all" />
+		<!-- Slick nav CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css" media="all" />
+		<!-- Iconfont CSS -->
+		<link rel="stylesheet" type="text/css" href="icofont.css" media="all" />
+		<!-- Slick CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<!-- Owl carousel CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+		<!-- Popup CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+		<!-- Switcher CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/switcher-style.css">
+		<!-- Animate CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+		<!-- Main style CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="all" />
+		<!-- Favicon Icon -->
+		<link rel="icon" type="image/png" href="assets/img/favcion.png" />
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+			
+	<style>
+			@media (min-width: 768px) {
+			
+			/* show 3 items */
+			.carousel-inner .active,
+			.carousel-inner .active + .carousel-item,
+			.carousel-inner .active + .carousel-item + .carousel-item,
+			.carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+				display: block;
+			}
+			
+			.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+			.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+			.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+			.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+				transition: none;
+			}
+			
+			.carousel-inner .carousel-item-next,
+			.carousel-inner .carousel-item-prev {
+			  position: relative;
+			  transform: translate3d(0, 0, 0);
+			}
+			
+			.carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+				position: absolute;
+				top: 0;
+				right: -25%;
+				z-index: -1;
+				display: block;
+				visibility: visible;
+			}
+			
+			/* left or forward direction */
+			.active.carousel-item-left + .carousel-item-next.carousel-item-left,
+			.carousel-item-next.carousel-item-left + .carousel-item,
+			.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+			.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+			.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+				position: relative;
+				transform: translate3d(-100%, 0, 0);
+				visibility: visible;
+			}
+			
+			/* farthest right hidden item must be abso position for animations */
+			.carousel-inner .carousel-item-prev.carousel-item-right {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+				display: block;
+				visibility: visible;
+			}
+			
+			/* right or prev direction */
+			.active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+			.carousel-item-prev.carousel-item-right + .carousel-item,
+			.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+			.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+			.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+				position: relative;
+				transform: translate3d(100%, 0, 0);
+				visibility: visible;
+				display: block;
+				visibility: visible;
+			}
+			
+			}
+			
+			/* Bootstrap Lightbox using Modal */
+			
+			#profile-grid { overflow: auto; white-space: normal; } 
+			#profile-grid .profile { padding-bottom: 40px; }
+			#profile-grid .panel { padding: 0 }
+			#profile-grid .panel-body { padding: 15px }
+			#profile-grid .profile-name { font-weight: bold; }
+			#profile-grid .thumbnail {margin-bottom:6px;}
+			#profile-grid .panel-thumbnail { overflow: hidden; }
+			#profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
+			
+			.carousel-control-prev {
+			  margin-left: -10px;
+			  width: 20px;
+			
+			}
+			
+			.carousel-control-next {
+				width: 20px;
+			  margin-right: -10px;
+			
+			}
+			
+			.carousel-control-next-icon:after
+			{
+			  content: '>';
+			  font-size: 55px;
+			  color: red;
+			}
+			
+			.carousel-control-prev-icon:after {
+			  content: '<';
+			  font-size: 55px;
+			  color: red;
+			}
+		
+				</style>
+
+		<script>
+				new WOW().init();
+		</script>
+		   <script>
+				jQuery(document).ready(function($) {
+					$('.counter').counterUp({
+						delay: 20,
+						time: 2000
+					});
+				});
+			</script>
+						<!-- jquery main JS -->
+		<script src="assets/js/jquery.min.js"></script>
+		<!-- Counter JS -->
+<script src="assets/js/jquery.counterup.min.js"></script>
+	</head>
+	<body data-spy="scroll" data-target=".header" data-offset="50">
+		<!-- Page loader -->
+	    <div id="preloader"></div>
+		<!-- header section start -->
+		<header class="header">
+			<div class="container">
+				<div class="row flexbox-center">
+					<div class="col-lg-2 col-md-3 col-6">
+						<div class="logo">
+							<a href="#home"><img src="assets/img/logo-eng1.png" alt="logo" /></a>
+							<a class="as-version" href="as/index.html">অসমীয়া সংস্কৰণ</a>
+						</div>
+					</div>
+					<div class="col-lg-10 col-md-9 col-6">
+						<div class="responsive-menu"></div>
+					    <div class="mainmenu">
+                            <ul id="primary-menu">
+															
+                                <li><a class="nav-link active" href="#home">Home</a></li>
+                                <li><a class="nav-link" href="#about">About</a></li>
+                                <li><a class="nav-link" href="#feature">UBA Coverage</a></li>
+                                <li><a class="nav-link" href="#analysis">Analysis & Reports</a></li>
+								<li><a class="nav-link" href="#team">Field Works</a></li>
+								<li><a class="nav-link" href="#team1">UBA Team</a></li>
+																<li><a class="nav-link" href="#cus">Contact Us</a></li>
+                            </ul>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</header><!-- header section end -->
+		<section class="hero-area" id="home">
+			<div class="player" data-property="{videoURL:'https://youtu.be/VQK2yyp9hVM',containment:'#home',autoPlay:true, mute:true, startAt:0, showControls:false, loop:true, opacity:1}"></div>
+			<div class="hero-area-slider">
+					<div class="hero-area-single-slide">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-5">
+										<div class="hero-area-content">
+											<h1>Village visit by JEC UBA team</h1>
+											<p>Visiting and collecting data  from all the villages covered under JEC UBA by the team of JEC.<b><br>Jorhat Engineering College</b></p>
+											<a href="#about" class="appao-btn">About Us</a>
+											<a href="#cus" class="appao-btn">Connect</a>
+										</div>
+									</div>
+									<div class="col-lg-7">
+										<div class="hand-mockup text-lg-left text-center">
+											<img src="assets/img/sir2.jpg" alt="Hand Mockup" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<div class="hero-area-single-slide">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-5">
+										<div class="hero-area-content">
+											<h1>Cooking chullah demonstration</h1>
+											<p>Showing people how to use the cooking chullah in Kurukani Basti by JEC UBA team.<b><br>Jorhat Engineering College</b></p>
+											<a href="#about" class="appao-btn">About Us</a>
+											<a href="#cus" class="appao-btn">Connect</a>
+										</div>
+									</div>
+									<div class="col-lg-7">
+										<div class="hand-mockup text-lg-left text-center">
+											<img src="assets/img/5.jpg" alt="Hand Mockup" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				<div class="hero-area-single-slide">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-5">
+									<div class="hero-area-content">
+										<h1>Training on Energy conservation</h1>
+										<p>Training on e-Support,Energy conservation and improved chullah in Kurukani Basti.<b><br>Jorhat Engineering College</b></p>
+										<a href="#about" class="appao-btn">About Us</a>
+										<a href="#cus" class="appao-btn">Connect</a>
+									</div>
+								</div>
+								<div class="col-lg-7">
+									<div class="hand-mockup text-lg-left text-center">
+										<img src="assets/img/1.jpg" alt="Hand Mockup" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hero-area-single-slide">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-5">
+										<div class="hero-area-content">
+											<h1>Field work under UBA</h1>
+											<p>Repairing a public hand pump in Shyam Gaon by the Team of JEC UBA.<br><b>Jorhat Engineering College</b></p>
+											<a href="#about" class="appao-btn">About Us</a>
+											<a href="#cus" class="appao-btn">Connect</a>
+										</div>
+									</div>
+									<div class="col-lg-7">
+										<div class="hand-mockup text-lg-left text-center">
+											<img src="assets/img/2.jpg" alt="Hand Mockup" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				<div class="hero-area-single-slide">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-5">
+								<div class="hero-area-content">
+									<h1>Showing how to use the chullah</h1>
+									<p>Making tea using the chullah in KURUKANI BASTI for the peoples.<br><b>Jorhat Engineering College</b></p>
+									<a href="#about" class="appao-btn">About Us</a>
+									<a href="#cus" class="appao-btn">Connect</a>
+								</div>
+							</div>
+							<div class="col-lg-7">
+								<div class="hand-mockup text-lg-left text-center">
+									<img src="assets/img/qwe.jpg" alt="Hand Mockup" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hero-area-single-slide">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="hero-area-content">
+									<h1>A moment during UBA works</h1>
+									<p>A moment during Unnat Bharat Abhiyan field work in Kurukani Basti, showing people of Kurukani Basti the working of chullah by the team of JEC UBA.<br><b>Jorhat Engineering College</b></p>
+									<a href="#about" class="appao-btn">About Us</a>
+									<a href="#cus" class="appao-btn">Connect</a>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<div class="hand-mockup-custom text-lg-left text-center">
+									<img src="assets/img/hand-mockup3.png" alt="Hand Mockup" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- hero area end -->
+
+			<section class="pro-section section-padding" id="about">
+				<br>
+					<div class="container">
+							<div class="row">
+									<div class="col-lg-6">
+											<div class="wrapper-content">
+													<h3>About the <span class="color">Unnat Bharat Abhiyan</span> of Jorhat Enginnering College.</h3>
+
+													<ul class="text-content">
+															<li>
+																	<span class="digit float-left">1</span>
+																	<p class="text-justify"> <b>Vision :</b> Unnat Bharat Abhiyan is inspired by the vision of transformational change in rural development processes by leveraging knowledge institutions to help build the architecture of an Inclusive India.</p>
+															</li>
+
+															<li>
+																	<span class="digit float-left">2</span>
+																	<p class="text-justify"><b>Mission :</b> The Mission of Unnat Bharat Abhiyan is to enable higher educational institutions to work with the people of rural India in identifying development challenges and evolving appropriate solutions for accelerating sustainable growth. It also aims to create a virtuous cycle between society and an inclusive academic system by providing knowledge and practices for emerging professions and to upgrade the capabilities of both the public and the private sectors in responding to the development needs of rural India.</p>
+															</li>
+													</ul> <!-- text-content -->
+											</div> <!-- wrapper-content -->
+									</div>
+
+									<div class="col-lg-5 offset-1">
+											<div class="caption wow fadeInRight">
+													<img src="assets/img/princi.jpg" alt="">
+											</div> <!-- caption -->
+									</div>
+							</div>
+					</div>
+					<br><br>
+			</section> 
+
+		<!-- feature section start -->
+		<section class="feature-area ptb-90" id="feature">
+			<div class="container">
+				<div class="row flexbox-center">
+					<div class="col-lg-12 offset-lg-4">
+						<div class="section-header wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s" data-wow-duration="1s">
+						  <h3 class="section-title">Our UBA Coverage</h3>
+						  <span class="section-divider"></span>
+						</div>
+					  </div>
+			
+					  <div class="col-lg-7 network-img">
+						  <div id="container1" class="wow fadeIn float-left" data-wow-duration="2s" data-wow-delay=".2s"  style="height: 500px; width: 100%"></div>
+					  </div>
+			
+					  <div class="col-lg-5">
+			
+						<div class="row  box wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">
+			
+						  <!-- <div class="col-lg-12 col-md-12"> -->
+							<div class="col-sm-12">
+							<div class="icon"><i class="fas fa-home"></i></div>
+							<h4 class="title"><a href="">Villages (Total Population)</a></h4>
+							</div>
+							<div class="col-sm-4 desc-1"  onclick="location.href='villageData.php?v_id= 1 '">
+							<p class="description">Bhaskar Nagar <br><b>( <span class="counter counter-size"> 458</span> )</b></p>
+							</div>
+							<div class="col-sm-4 desc-2" onclick="location.href='villageData.php?v_id= 2 '">
+							<p class="description">Jankhona Gaon<br><b>( <span class="counter counter-size">  686 </span> )</b></p>
+							</div>
+							<div class="col-sm-4 desc-3" onclick="location.href='villageData.php?v_id= 3 '">
+							<p class="description">Kurukani Basti<br><b>( <span class="counter counter-size">  632 </span> )</b></p>
+							</div>
+							<div class="col-sm-4 desc-4" onclick="location.href='villageData.php?v_id= 4 '">
+							<p class="description">Kokilamukh Missing Gaon<br><b>( <span class="counter counter-size"> 259</span> )</b></p>
+							</div>
+							<div class="col-sm-4 desc-5" onclick="location.href='villageData.php?v_id= 5 '">
+							<p class="description">Pahukotia Shyam Gaon<br><b>( <span class="counter counter-size"> 299</span> )</b></p>
+						  </div>
+	
+						</div>
+		
+					  </div>
+				</div>
+			</div>
+		</section><!-- feature section end -->
+		<!-- analysis section -->
+		<section id="analysis" class="section-bg">
+			<div class="container">
+	  
+			  <div class="section-header">
+				<h3 class="section-title-1">Analysis & Reports</h3>
+				<span class="section-divider-1"></span>
+				<p class="section-description-1">All of the Analysis & Reports are showing below are based on Actual village Data.</p>
+			  </div>
+	  
+			  <div class="row">
+	  
+				<div class="col-lg-6" onclick="location.href='demo_comp.php'">
+				  <div class="box wow fadeInLeft">
+					<div class="icon"><i class="fas fa-chart-pie"></i></div>
+					<h4 class="title">Compare Villages</h4>
+					<p class="description">Compare Villages between there various sections, For example Population,connectivity etc.</p>
+				  </div>
+				</div>
+	  
+				<div class="col-lg-6" onclick="location.href='analysis.html'">
+				  <div class="box wow fadeInRight">
+					<div class="icon"><i class="fas fa-chart-bar"></i></div>
+					<h4 class="title">Analysis Report</h4>
+					<p class="description">See Analysis Report of five villages (village data and their graphical analysis of different schemes).</p>
+				  </div>
+				</div>
+	  
+				<div class="col-lg-6"  onclick="location.href='assets/img/coming.jpg'">
+				  <div class="box wow fadeInLeft">
+					<div class="icon"><i class="fas fa-chart-line"></i></div>
+					<h4 class="title">Activity</h4>
+					<p class="description">See the current activity we are doing as a Team of JEC UBA for the covered villages and their people.</p>
+				  </div>
+				</div>
+	  
+				<div class="col-lg-6" onclick="location.href='develop_plan.html'">
+				  <div class="box wow fadeInRight">
+					<div class="icon"><i class="far fa-lightbulb"></i></div>
+					<h4 class="title">Development Plans</h4>
+					<p class="description">See the development plans for UBA, its various different schemes for village development. </p>
+				  </div>
+				</div>
+	  
+			  </div>
+			</div>
+		  </section><!-- #analysis -->
+
+
+
+
+
+		<!-- video section start -->
+		<section class="video-area ptb-90">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+					    <div class="video-popup">
+							<a href="https://www.youtube.com/watch?v=SBzTgbysWnc" class="popup-youtube"><i class="icofont icofont-ui-play"></i></a>
+							<h1>Watch The Video Presentation in</h1>
+							<h1>Kurukani Basti</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- video section end -->
+		<section class="team-area ptb-90" id="team">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+					    <div class="sec-title">
+							<h2>Field Work<span class="sec-title-border"><span></span><span></span><span></span></span></h2>
+							<p>Some of our Field work for Unnat Bharat Abhiyan under JEC</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row no-gutters">
+			  
+						<div class="col-lg-4 col-md-6">
+						  <div class="team-item wow fadeInUp">
+							<a href="assets/img/gallery/gallery-1.jpg" class="team-popup">
+							  <img src="assets/img/gallery/gallery-1.jpg" alt="">
+							</a>
+						  </div>
+						</div>
+			  
+						<div class="col-lg-4 col-md-6">
+						  <div class="team-item wow fadeInUp">
+							<a href="assets/img/gallery/gallery-2.jpg" class="team-popup">
+							  <img src="assets/img/gallery/gallery-2.jpg" alt="">
+							</a>
+						  </div>
+						</div>
+			  
+						<div class="col-lg-4 col-md-6">
+						  <div class="team-item wow fadeInUp">
+							<a href="assets/img/gallery/gallery-3.jpg" class="team-popup">
+							  <img src="assets/img/gallery/gallery-3.jpg" alt="">
+							</a>
+						  </div>
+						</div>
+			  
+						<div class="col-lg-4 col-md-6">
+						  <div class="team-item wow fadeInUp">
+							<a href="assets/img/gallery/gallery-4.jpg" class="team-popup">
+							  <img src="assets/img/gallery/gallery-4.jpg" alt="">
+							</a>
+						  </div>
+						</div>
+			  
+						<div class="col-lg-4 col-md-6">
+						  <div class="team-item wow fadeInUp">
+							<a href="assets/img/gallery/gallery-5.jpg" class="team-popup">
+							  <img src="assets/img/gallery/gallery-5.jpg" alt="">
+							</a>
+						  </div>
+						</div>
+			  
+						<div class="col-lg-4 col-md-6">
+						  <div class="team-item wow fadeInUp">
+							<a href="assets/img/gallery/gallery-6.jpg" class="team-popup">
+							  <img src="assets/img/gallery/gallery-6.jpg" alt="">
+							</a>
+						  </div>
+						</div>
+
+						<div class="col-lg-4 col-md-6">
+								<div class="team-item wow fadeInUp">
+								<a href="assets/img/gallery/sir1.jpg" class="team-popup">
+									<img src="assets/img/gallery/sir1.jpg" alt="">
+								</a>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+									<div class="team-item wow fadeInUp">
+									<a href="assets/img/gallery/sir2.jpg" class="team-popup">
+										<img src="assets/img/gallery/sir2.jpg" alt="">
+									</a>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6">
+										<div class="team-item wow fadeInUp">
+										<a href="assets/img/gallery/sir3.jpg" class="team-popup">
+											<img src="assets/img/gallery/sir3.jpg" alt="">
+										</a>
+										</div>
+									</div>
+			  
+					  </div>
+
+				</div>
+				</section>
+	
+
+		<!-- team section start -->
+		<section class="team-area ptb-90" id="team1">
+				<div class="container">
+						<div class="row">
+								<div class="col-lg-12">
+									<div class="sec-title">
+										<h2>Meet Our Team<span class="sec-title-border"><span></span><span></span><span></span></span></h2>
+										<p>Our UBA Team of Jorhat Engineering College </p>
+									</div>
+								</div>
+							</div>
+						<div id="carouselExample" class="carousel slide wow fadeInUp" data-ride="carousel" data-interval="9000">
+							<div class="carousel-inner row w-100 mx-auto" role="listbox">
+								<div class="carousel-item col-md-3  active">
+								   <div class="panel panel-default">
+									  <div class="panel-thumbnail">
+											<div class="single-team-member">
+													<div class="team-member-img">
+														<img src="assets/img/team/1.jpg" alt="team">
+														<div class="team-member-icon">
+															<div class="display-table">
+																<div class="display-tablecell">
+																	<a href="#"><i class="icofont-facebook"></i></a>
+																	<a href="#"><i class="icofont-twitter"></i></a>
+																	<a href="#"><i class="icofont-linkedin"></i></a>
+																	<a href="#"><i class="icofont-pinterest"></i></a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="team-member-info">
+														<a href="#"><h4>Dr. Reeta Sarmah</h4></a>
+														<p>Principal, JEC</p>
+													</div>
+												</div>
+									  </div>
+									</div>
+								</div>
+								<div class="carousel-item col-md-3 ">
+								   <div class="panel panel-default">
+									  <div class="panel-thumbnail">
+											<div class="single-team-member">
+													<div class="team-member-img">
+														<img src="assets/img/team/2.jpg" alt="team">
+														<div class="team-member-icon">
+															<div class="display-table">
+																<div class="display-tablecell">
+																	<a href="#"><i class="icofont-facebook"></i></a>
+																	<a href="#"><i class="icofont-twitter"></i></a>
+																	<a href="#"><i class="icofont-linkedin"></i></a>
+																	<a href="#"><i class="icofont-pinterest"></i></a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="team-member-info">
+														<a href="#"><h4>Dr. Deva Kanta Rabha</h4></a>
+														<p>Coordinator</p>
+													</div>
+												</div>
+									  </div>
+									</div>
+								</div>
+								<div class="carousel-item col-md-3 ">
+								   <div class="panel panel-default">
+									  <div class="panel-thumbnail">
+											<div class="single-team-member">
+													<div class="team-member-img">
+														<img src="assets/img/team/3.jpg" alt="team">
+														<div class="team-member-icon">
+															<div class="display-table">
+																<div class="display-tablecell">
+																	<a href="#"><i class="icofont-facebook"></i></a>
+																	<a href="#"><i class="icofont-twitter"></i></a>
+																	<a href="#"><i class="icofont-linkedin"></i></a>
+																	<a href="#"><i class="icofont-pinterest"></i></a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="team-member-info">
+														<a href="#"><h4>Dr. Thuleswar Nath</h4></a>
+														<p>Member</p>
+													</div>
+												</div>
+									  </div>
+									</div>
+								</div>
+								<div class="carousel-item col-md-3 ">
+									<div class="panel panel-default">
+									  <div class="panel-thumbnail">
+											<div class="single-team-member">
+													<div class="team-member-img">
+														<img src="assets/img/team/4.jpg" alt="team">
+														<div class="team-member-icon">
+															<div class="display-table">
+																<div class="display-tablecell">
+																	<a href="#"><i class="icofont-facebook"></i></a>
+																	<a href="#"><i class="icofont-twitter"></i></a>
+																	<a href="#"><i class="icofont-linkedin"></i></a>
+																	<a href="#"><i class="icofont-pinterest"></i></a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="team-member-info">
+														<a href="#"><h4>Mr.Dhrubajyoti Baruah</h4></a>
+														<p>Member</p>
+													</div>
+												</div>
+									  </div>
+									</div>
+								</div>
+								<div class="carousel-item col-md-3 ">
+								  <div class="panel panel-default">
+									  <div class="panel-thumbnail">
+											<div class="single-team-member">
+													<div class="team-member-img">
+														<img src="assets/img/team/5.png" alt="team">
+														<div class="team-member-icon">
+															<div class="display-table">
+																<div class="display-tablecell">
+																	<a href="#"><i class="icofont-facebook"></i></a>
+																	<a href="#"><i class="icofont-twitter"></i></a>
+																	<a href="#"><i class="icofont-linkedin"></i></a>
+																	<a href="#"><i class="icofont-pinterest"></i></a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="team-member-info">
+														<a href="#"><h4>Mr. Papumoni Saikia</h4></a>
+														<p>Member</p>
+													</div>
+												</div>
+									  </div>
+									</div>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+		</section><!-- team section end -->
+
+
+		<!-- download section start -->
+		<section class="download-area ptb-90" id="cus">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+					    <div class="sec-title">
+							<h2>Unnat Bharat Abhiyan<span class="sec-title-border"><span></span><span></span><span></span></span></h2>
+							<p>Some important links</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<ul>
+							<li>
+								<a href="http://unnat.iitd.ac.in/index.php/Pages/display/index" class="download-btn flexbox-center">
+									<div class="download-btn-icon">
+											<i class="icofont-link"></i>
+									</div>
+									<div class="download-btn-text">
+										<p>Unnat Bharat Abhiyan</p>
+										<h4>www.unnat.iitd.ac.in</h4>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://jecassam.ac.in/" class="download-btn flexbox-center">
+									<div class="download-btn-icon">
+											<i class="icofont-link"></i>
+									</div>
+									<div class="download-btn-text">
+										<p>Jorhat Engineering College</p>
+										<h4>www.jecassam.ac.in</h4>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="download-btn flexbox-center">
+									<div class="download-btn-icon">
+											<i class="icofont-link"></i>
+									</div>
+									<div class="download-btn-text">
+										<p>UBA JEC</p>
+										<h4>wwww.jecuba.in</h4>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section><!-- download section end -->
+
+		<!-- footer section start -->
+		<footer class="footer" id="contact">
+			<div class="container">
+				<div class="row">
+                    <div class="col-lg-6">
+						<div class="contact-form">
+							<h4>Get in Touch</h4>
+							<p class="form-message"></p>
+							<form id="contact-form" action="email.php" method="post">
+				                <input type="text" name="name" placeholder="Enter Your Name">
+				                <input type="email" name="email" placeholder="Enter Your Email">
+				                <input type="text" name="subject" placeholder="Your Subject">
+				                <textarea placeholder="Messege" name="message"></textarea>
+				                <button type="submit" name="submit">Send Message</button>
+				            </form>
+						</div>
+                    </div>
+                    <div class="col-lg-6">
+						<div class="contact-address">
+							<h4><u>Address</u></h4>
+							<p>UNNAT BHARAT ABHIYAN<br>Jorhart Engineering College,<br>Garmur, Jorhat, PIN-785007, Dist-Jorhat, State-Assam.</p>
+							<ul>
+								<li>
+									<div class="contact-address-icon">
+										<i class="icofont icofont-headphone-alt"></i>
+									</div>
+									<div class="contact-address-info">
+										<a href="callto:#">+919864321999</a>
+									</div>
+								</li>
+								<li>
+									<div class="contact-address-icon">
+										<i class="icofont icofont-envelope"></i>
+									</div>
+									<div class="contact-address-info">
+										<a href="#">contact@jecuba.in</a>
+									</div>
+								</li>
+								<li>
+									<div class="contact-address-icon">
+										<i class="icofont icofont-web"></i>
+									</div>
+									<div class="contact-address-info">
+										<a href="www.website.com">www.jecuba.in</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+                    </div>
+				</div>
+				<!-- <div class="row">
+                    <div class="col-lg-12">
+						<div class="subscribe-form">
+							<form action="#">
+								<input type="text" placeholder="Your email address here">
+								<button type="submit">Subcribe</button>
+							</form>
+						</div>
+                    </div>
+				</div> -->
+				<div class="row">
+                    <div class="col-lg-12">
+						<div class="copyright-area">
+							<ul>
+								<li><a href="#"><i class="icofont icofont-facebook"></i></a></li>
+								<li><a href="#"><i class="icofont icofont-twitter"></i></a></li>
+								<li><a href="#"><i class="icofont icofont-linkedin"></i></a></li>
+								<li><a href="#"><i class="icofont icofont-pinterest"></i></a></li>
+								<li><a href="#"><i class="icofont icofont-google-plus"></i></a></li>
+							</ul>
+							<p>Copyright &copy;All rights reserved | Jorhat Engineering College <i class="fa fa-heart-o" aria-hidden="true"></i>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+						</div>
+                    </div>
+				</div>
+			</div>
+		</footer><!-- footer section end -->
+		<a href="#" class="scrollToTop">
+			<i class="icofont icofont-arrow-up"></i>
+		</a>
+
+	
+		<!-- Bootstrap JS -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!-- Slick nav JS -->
+		<script src="assets/js/jquery.slicknav.min.js"></script>
+		<!-- Slick JS -->
+		<script src="assets/js/slick.min.js"></script>
+		<!-- owl carousel JS -->
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<!-- Popup JS -->
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		
+		<!-- Counterup waypoints JS -->
+		<script src="assets/js/waypoints.min.js"></script>
+	    <!-- YTPlayer JS -->
+	    <script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+		<!-- jQuery Easing JS -->
+		<script src="assets/js/jquery.easing.1.3.js"></script>
+		<!-- Gmap JS -->
+		<script src="assets/js/gmap3.min.js"></script>
+		<!-- Custom map JS -->
+		<script src="assets/js/custom-map.js"></script>
+		<!-- WOW JS -->
+		<script src="assets/js/wow-1.3.0.min.js"></script>
+		<!-- Switcher JS -->
+		<script src="assets/js/switcher.js"></script>
+		<!-- charts -->
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+		<script src="https://code.highcharts.com/modules/export-data.js"></script>
+		<script src="http://code.highcharts.com/highcharts-more.js"></script>
+		<!-- magnific-popup -->
+		<script src="assets/js/magnific-popup.min.js"></script>
+		<!-- main JS -->
+		<script src="assets/js/main.js"></script>
+
+ <script>
+	//       (function (H) {
+	//     function deferRender (proceed) {
+	//         var series = this, 
+	//             $renderTo = $(this.chart.container1.parentNode);
+	
+	//         // It is appeared, render it
+	//         if ($renderTo.is(':appeared') || !series.options.animation) {
+	//             proceed.call(series);
+				
+	//         // It is not appeared, halt renering until appear
+	//         } else  {
+	//             $renderTo.appear(); // Initialize appear plugin
+	//             $renderTo.on('appear', function () {
+	//                 proceed.call(series);
+	//             });
+	//         }
+	//     };
+		
+	//     H.wrap(H.Series.prototype, 'render', deferRender);
+		
+	// }(Highcharts));
+	$('#container1').highcharts({
+			chart: {
+				type: 'column',
+				options3d: {
+					enabled: true,
+					alpha: 10,
+					beta: 25,
+					depth: 70
+				}
+			},
+			title: {
+				text: 'Population'
+			},
+			subtitle: {
+				text: 'Population differences among villages'
+			},
+			plotOptions: {
+				column: {
+					depth: 25,
+					colorByPoint: true
+				}
+			},
+			colors: [
+					'#FE901F',
+					'#47A3DA',
+					'#2F5C85',
+					'#2DD6C9',
+					'#434348'
+				],
+				// exporting: { enabled: false },
+				credits: {
+		  enabled: false
+	  },
+			xAxis: {
+			  categories: ['BN', 'JG', 'KB', 'KMG', 'PSG'],
+				labels: {
+					skew3d: true,
+					style: {
+						fontSize: '16px'
+					}
+				}
+			},
+			yAxis: {
+				title: {
+					text: null
+				}
+			},
+			series: [{
+				name: 'Total Population',
+				data: [458, 686, 632, 259, 299]
+			}]
+		});
+		  
+		  </script>
+		  <script>
+		    $('.team-popup').magnificPopup({
+				type: 'image',
+				removalDelay: 300,
+				mainClass: 'mfp-fade',
+				gallery: {
+				  enabled: true
+				},
+				zoom: {
+				  enabled: true,
+				  duration: 300,
+				  easing: 'ease-in-out',
+				  opener: function(openerElement) {
+					return openerElement.is('img') ? openerElement : openerElement.find('img');
+				  }
+				}
+			  });
+	</script>
+<script>
+
+$('#carouselExample').on('slide.bs.carousel', function (e) {
+
+  
+var $e = $(e.relatedTarget);
+var idx = $e.index();
+var itemsPerSlide = 4;
+var totalItems = $('.carousel-item').length;
+
+if (idx >= totalItems-(itemsPerSlide-1)) {
+	var it = itemsPerSlide - (totalItems - idx);
+	for (var i=0; i<it; i++) {
+		// append slides to end
+		if (e.direction=="left") {
+			$('.carousel-item').eq(i).appendTo('.carousel-inner');
+		}
+		else {
+			$('.carousel-item').eq(0).appendTo('.carousel-inner');
+		}
+	}
+}
+});
+
+
+$('#carouselExample').carousel({ 
+			interval: 2000
+	});
+
+
+$(document).ready(function() {
+/* show lightbox when clicking a thumbnail */
+$('a.thumb').click(function(event){
+  event.preventDefault();
+  var content = $('.modal-body');
+  content.empty();
+	var title = $(this).attr("title");
+	$('.modal-title').html(title);        
+	content.html($(this).html());
+	$(".modal-profile").modal({show:true});
+});
+
+});
+</script>
+	</body>
+</html>

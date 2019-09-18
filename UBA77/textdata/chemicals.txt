@@ -1,0 +1,2 @@
+<option value="chemicals_used">Chemicals Used (Household)</option>
+<option value="chemicals_not_used">Chemicals Not Used (Household)</option>

@@ -1,0 +1,77 @@
+
+#word:hover{ border-style: solid;
+    border-width: 1px;
+    border-color: #0066FF;}
+
+#word:focus
+ { border-style: solid;
+    border-width: 1px;
+    border-color: #0066FF; 
+	}
+.word{border-style: solid;
+    height:30px; width:350px;max-width:600;
+    border-width: 1px;
+    border-color: grey;
+    margin: 5px;
+    padding:2px; 
+	font:16px/16px 'Asomiya_Rohini';
+    font-size:16px;
+	}
+	
+/* css to design the text box of meaning.php file */
+
+.meanword{border-style: solid;
+    height:25px; width:200px;max-width:600;
+    border-width: 1px;
+    border-color: grey;
+    margin: 5px;
+    padding:2px; 
+	font:16px/16px 'Asomiya_Rohini';
+    font-size:16px;}
+	
+	
+#speaker{border: 1px solid transparent;
+display: inline-block;
+height: 25px;
+width: 25px;}
+
+#speaker:hover{border:1px solid #40A5E4;
+display: inline-block;
+height: 25px;
+width: 25px;}
+
+/* css to designthe button in keyboard */
+#divkeyboard input[type="button"] 
+{
+	display:inline;
+}
+#divconsonants input[type="button"] 
+{
+	display:inline;
+}
+
+
+.bt {position:relative; margin-top:2px; padding-bottom:2px; border-style: solid; border-width: 1px;border-color:grey; border-radius: 3px;  background-color: #F5F5F5; font-family:Asomiya_Rohini; font-weight:600; font-size:20px;text-align:center; height:35px; width:65px; min-width: 60px; box-shadow: 1px 1px 1px grey;}
+
+.bt1{position:relative; margin-top:2px; padding-bottom:2px; border-style: solid; border-width: 1px;border-color:grey; border-radius: 3px;  background-color: #F5F5F5; font-family:Asomiya_Rohini;font-size: 20px;font-weight:600; text-align:center;height:35px; width:100px; min-width: 60px; box-shadow: 1px 1px 1px grey;}
+
+.submit{position:relative; margin-top:8px;padding: 5px 5px; border-style: solid; border-width: 1px;border-color:grey; border-radius: 2px;font-family:Asomiya_Rohini;font-size: 20px;font-weight: bold;font-color:White;text-align:center;height:40px; width:100px;  min-width: 60px;background-color:#F5F5F5;}
+
+/* css to design the virtualkeyboard division */
+
+/*#virtualkeyboard{position:absolute; margin-top:8px;padding: 5px 5px; border-style: solid; border-width: 1px;border-color:grey; border-radius: 2px;  background-color: #F5F5F5; font-family: arial,sans-serif;font-size:15px;font-weight:bold; text-align:center;height:40px; width:100px;}*/
+
+
+#body{position:relative;top:10px;text-align:center;}
+
+#insert {position:relative;top:3px;font-family:Asomiya_Rohini;font-size: 20px;font-style:normal; font-color:red; text-align:center;text-shadow:1px 1px 3px grey;}
+
+#divkeyboard{top:0px;left:50px;right:50px; margin:auto;padding-top:5px; padding-bottom:5px; padding-right: 5px; padding-left: 5px; border-style:solid; border-width:2px; border-color:grey; width:1200px; height:200px; box-shadow: 8px 8px 5px grey;background-color:#FFF;}
+
+#divconsonants {position:relative;height:150px; width:1045px; }
+
+#divnumber{height:200px; width:150px;position:relative; top:-192px;left:1055px; }
+
+#conjugate{font-family:Asomiya_Rohini;top:0px;left:50px;right:50px;margin:auto;padding-top:5px; padding-bottom:5px; padding-right: 5px; padding-left: 5px; border-style:solid; border-width:1px; border-color:blue; width:1200px; box-shadow: 8px 8px 5px grey;background-color:#FFF;}
+
+

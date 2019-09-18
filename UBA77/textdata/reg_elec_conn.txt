@@ -1,0 +1,1 @@
+<option value="registered_electricity_connection_to_households">Registered Electricity Connection To Households</option>

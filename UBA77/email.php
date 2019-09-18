@@ -1,0 +1,356 @@
+<?php
+include "dbconn1.php";
+?>
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Unnat Bharat Abhiyan | JEC</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="all" />
+		<!-- Slick nav CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css" media="all" />
+		<!-- Iconfont CSS -->
+		<link rel="stylesheet" type="text/css" href="icofont.css" media="all" />
+		<!-- Slick CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<!-- Owl carousel CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+		<!-- Popup CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+		<!-- Switcher CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/switcher-style.css">
+		<!-- Animate CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+		<!-- Main style CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="all" />
+		<!-- Favicon Icon -->
+		<link rel="icon" type="image/png" href="assets/img/favcion.png" />
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+			
+	<style>
+			@media (min-width: 768px) {
+			
+			/* show 3 items */
+			.carousel-inner .active,
+			.carousel-inner .active + .carousel-item,
+			.carousel-inner .active + .carousel-item + .carousel-item,
+			.carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+				display: block;
+			}
+			
+			.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+			.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+			.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+			.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+				transition: none;
+			}
+			
+			.carousel-inner .carousel-item-next,
+			.carousel-inner .carousel-item-prev {
+			  position: relative;
+			  transform: translate3d(0, 0, 0);
+			}
+			
+			.carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+				position: absolute;
+				top: 0;
+				right: -25%;
+				z-index: -1;
+				display: block;
+				visibility: visible;
+			}
+			
+			/* left or forward direction */
+			.active.carousel-item-left + .carousel-item-next.carousel-item-left,
+			.carousel-item-next.carousel-item-left + .carousel-item,
+			.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+			.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+			.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+				position: relative;
+				transform: translate3d(-100%, 0, 0);
+				visibility: visible;
+			}
+			
+			/* farthest right hidden item must be abso position for animations */
+			.carousel-inner .carousel-item-prev.carousel-item-right {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+				display: block;
+				visibility: visible;
+			}
+			
+			/* right or prev direction */
+			.active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+			.carousel-item-prev.carousel-item-right + .carousel-item,
+			.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+			.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+			.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+				position: relative;
+				transform: translate3d(100%, 0, 0);
+				visibility: visible;
+				display: block;
+				visibility: visible;
+			}
+			
+			}
+			
+			/* Bootstrap Lightbox using Modal */
+			
+			#profile-grid { overflow: auto; white-space: normal; } 
+			#profile-grid .profile { padding-bottom: 40px; }
+			#profile-grid .panel { padding: 0 }
+			#profile-grid .panel-body { padding: 15px }
+			#profile-grid .profile-name { font-weight: bold; }
+			#profile-grid .thumbnail {margin-bottom:6px;}
+			#profile-grid .panel-thumbnail { overflow: hidden; }
+			#profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
+			
+			.carousel-control-prev {
+			  margin-left: -10px;
+			  width: 20px;
+			
+			}
+			
+			.carousel-control-next {
+				width: 20px;
+			  margin-right: -10px;
+			
+			}
+			
+			.carousel-control-next-icon:after
+			{
+			  content: '>';
+			  font-size: 55px;
+			  color: red;
+			}
+			
+			.carousel-control-prev-icon:after {
+			  content: '<';
+			  font-size: 55px;
+			  color: red;
+			}
+			
+			}
+			
+			<style>
+    #container1 {
+        height: 400px; 
+        min-width: 310px; 
+        max-width: 800px;
+        margin: 0 auto;
+	}
+	.containerc {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containerc input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.containerc:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerc input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.containerc input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerc .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.form-row button{
+				background: #007BFF;
+				color:#fff;
+				padding: 10px;
+}
+    </style>
+
+		<script>
+				new WOW().init();
+		</script>
+		   <script>
+				jQuery(document).ready(function($) {
+					$('.counter').counterUp({
+						delay: 20,
+						time: 2000
+					});
+				});
+			</script>
+						<!-- jquery main JS -->
+		<script src="assets/js/jquery.min.js"></script>
+		<!-- Counter JS -->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js"></script>
+<script>
+		$(function() {
+		
+			$("#text-one").change(function() {
+				if($(this).val() == 'd_profile'){
+					$("#text-one-one").load("textdata/" + $(this).val() + ".txt");
+					$("#text-two").load("textdata/d_profile_sub.txt");
+				}
+				else if($(this).val() != 'd_profile'){
+					$("#text-one-one").load("textdata/" + $(this).val() + ".txt");
+					$("#text-two").load("textdata/base.txt");
+				}
+				
+			});
+			$("#text-one-one").change(function() {
+				$("#text-two").load("textdata/" + $(this).val() + ".txt");
+			});
+		});
+	</script>
+	</head>
+	<body data-spy="scroll" data-target=".header" data-offset="50">
+		<!-- Page loader -->
+	    <div id="preloader"></div>
+		<!-- header section start -->
+		<header class="header header-demo">
+			<div class="container">
+				<div class="row flexbox-center">
+					<div class="col-lg-2 col-md-3 col-6">
+						<div class="logo">
+							<a href="#home"><img src="assets/img/logo-eng1.png" alt="logo" /></a>
+							<a class="as-version" href="as/index.html">অসমীয়া সংস্কৰণ</a>
+						</div>
+					</div>
+					<div class="col-lg-10 col-md-9 col-6">
+						<div class="responsive-menu"></div>
+					    <div class="mainmenu">
+                            <ul id="primary-menu">
+                                <li><a class="nav-link active" href="index#home">Home</a></li>
+                                <li><a class="nav-link" href="index#about">About</a></li>
+                                <li><a class="nav-link" href="index#feature">UBA Coverage</a></li>
+                                <li><a class="nav-link" href="index#analysis">Analysis & Reports</a></li>
+								<li><a class="nav-link" href="index#team">Field Works</a></li>
+								<li><a class="nav-link" href="index#team1">UBA Team</a></li>
+                                <li><a class="nav-link" href="index#cus">Contact Us</a></li>
+                            </ul>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</header><!-- header section end -->
+
+
+<div class="container">
+<br><br><br><br><br><br><br>
+<?php
+if(isset($_POST['submit'])){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $sub = $_POST['subject'];
+    $message = $_POST['message'];
+    $to = 'contact@jecuba.in';
+    $subject = 'JECUBA SITE';
+    $message1 = "Name : " .$name."\n"."Email :" .$email."\n"."Message"."\n".$message;
+    $headers = "From :".$email;
+    if(mail($to, $subject, $message1, $headers)){
+        echo '<div class="alert alert-success alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Message Sent!</strong> Thank you '.$name.'. We will contact you shortly...<a href="index.html" class="float-right">Back</a>
+      </div>';
+    }else{
+        echo "Error";
+    }
+
+
+}
+
+
+?>
+		<!-- Bootstrap JS -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!-- Slick nav JS -->
+		<script src="assets/js/jquery.slicknav.min.js"></script>
+		<!-- Slick JS -->
+		<script src="assets/js/slick.min.js"></script>
+		<!-- owl carousel JS -->
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<!-- Popup JS -->
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		
+		<!-- Counterup waypoints JS -->
+		<script src="assets/js/waypoints.min.js"></script>
+	    <!-- YTPlayer JS -->
+	    <script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+		<!-- jQuery Easing JS -->
+		<script src="assets/js/jquery.easing.1.3.js"></script>
+		<!-- Gmap JS -->
+		<script src="assets/js/gmap3.min.js"></script>
+		<!-- Custom map JS -->
+		<script src="assets/js/custom-map.js"></script>
+		<!-- WOW JS -->
+		<script src="assets/js/wow-1.3.0.min.js"></script>
+		<!-- Switcher JS -->
+		<script src="assets/js/switcher.js"></script>
+		<!-- charts -->
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+		<script src="https://code.highcharts.com/modules/export-data.js"></script>
+		<script src="http://code.highcharts.com/highcharts-more.js"></script>
+		<!-- magnific-popup -->
+		<script src="assets/js/magnific-popup.min.js"></script>
+		<!-- main JS -->
+		<script src="assets/js/main.js"></script>
+</body>
+</html>

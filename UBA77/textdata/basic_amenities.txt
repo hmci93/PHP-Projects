@@ -1,0 +1,8 @@
+<option value="">Select Sub Section</option>
+<option value="education">Education</option>
+<option value="edu_lvl">Education Level</option>
+<option value="health">Health</option>
+<option value="drink_wtr_fac">Drinkage Water Facility</option>
+<option value="hse_hld_waste">Household Waste Collection System</option>
+<option value="hsehld_wt_or_wot">Households Toilets Across Caste Section</option>
+<option value="houses_among_houshld">Type of Houses Among The Households</option>

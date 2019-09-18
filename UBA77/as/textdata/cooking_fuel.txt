@@ -1,0 +1,6 @@
+<option value="kerosene">Kerosene</option>
+<option value="lpg">LPG</option>
+<option value="biogas">Biogas</option>
+<option value="wood">Wood</option>
+<option value="cow_dung">Cow Dung</option>
+<option value="agroresidues">Agroresidues</option>
