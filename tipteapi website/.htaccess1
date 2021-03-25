@@ -1,0 +1,7 @@
+<IfModule mod_headers.c>
+    # Header always set Access-Control-Allow-Origin: "https://api.teapai.in/"
+    Header always set Access-Control-Allow-Origin: "*"
+    Header always set Access-Control-Allow-Methods: "GET,HEAD,POST,OPTIONS,DELETE,PUT"
+    Header always set Access-Control-Allow-Headers: "Overwrite, Destination, Content-Type, Depth, User-Agent, Translate, Range, Content-Range, Timeout, X-File-Size, X-Requested-With, If-Modified-Since, X-File-Name, Cache-Control, Location, Lock-Token"
+    # Header always set Access-Control-Allow-Credentials true
+</IfModule>
